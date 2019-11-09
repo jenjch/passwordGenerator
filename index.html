@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <Header>
@@ -13,19 +14,19 @@
     </Header>
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-6">
+        <div class="row text-center justify-content-center">
+            <div class="col-sm-8">
                 <h2 class="font-weight-bold">Generate a Password</h2>
                 <div class="form-group">
-                    <label for="password">Your Secure Password</label>
-                        <textarea class="form-control rounded-0" id="password" rows="8"></textarea>
+                    <label for="password" class= "text-center">Your Secure Password</label>
+                        <textarea class="form-control rounded-0" id="outputPwd" rows="8"></textarea>
                 </div>
                 <div class="row">
-                    <div class="col-xs-6">
-                    <button type="button" class="generate-pw btn btn-primary">Generate Password</button>
+                    <div class="col-sm-6">
+                    <button type="button" class="generate-pw text-center btn btn-primary">Generate Password</button>
                     </div>
-                    <div class="col-xs-6">
-                    <button type="button" class="copy-password btn btn-primary">Copy to Clipboard</button>   
+                    <div class="col-sm-6">
+                    <button type="button" class="copy-password text-center btn btn-primary">Copy to Clipboard</button>   
             </div>
         </div>
     </div>
