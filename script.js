@@ -20,7 +20,7 @@ document.querySelector(".generate-pw").onclick = function(event) {
     charLength = prompt(
       "How many characters would you like your password to contain?"
     );
-    } else if (charLength < 8 && charLength > 128) {
+    } else if (charLength < 8 || charLength > 128) {
     alert("Password must be between 8 and 128 characters!");
     charLength = prompt(
       "How many characters would you like your password to contain?"
