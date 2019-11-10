@@ -1,0 +1,54 @@
+body {
+    background-image: url("full-bloom.png");
+}
+
+h1 {
+    color:#ffffff;
+    background-color: grey;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2{
+    padding: 10px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 30px;
+    position: relative;
+    top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#outputPwd {
+    border: 2px dashed #cccccc;
+}
+
+.form-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.btn {
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.generate-pw {
+    background-color: rgb(177, 3, 3);
+    color:#ffffff;
+    border: none;
+}
+
+.copy-pw {
+    background-color: grey;
+    color:#ffffff;
+    border: none;
+}

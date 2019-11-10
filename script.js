@@ -3,18 +3,16 @@ var upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var number = "0123456789";
 var symbol = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~\"";
 
-var outputPwd = document.getElementById ("outputPwd")
+var outputPwd = document.getElementById("outputPwd");
 
-function checkNum (num){
-    return /^[0-9.,]+$/.test(num)
-}
+function checkNum(num){
+    return /^[0-9.,]+$/.test(num);
+};
 document.querySelector(".generate-pw").addEventListener("click", generatePassword);
 
 function generatePassword(event) {
-  var charLength = prompt(
-    "How many characters would you like your password to contain?"
-  );
-var convertedNumber = parseInt(charLength);
+    var charLength = prompt("How many characters would you like your password to contain?");
+    var convertedNumber = parseInt(charLength);
 
 if (!checkNum (convertedNumber)) {
     alert("You must enter a number!");
@@ -24,6 +22,7 @@ if (!checkNum (convertedNumber)) {
 
 } else if (charLength < 8 || charLength > 128) {
     alert("Your password must be between 8 and 128 characters!");
+    
     generatePassword();
     return;
 
@@ -45,6 +44,7 @@ if (!checkNum (convertedNumber)) {
 
         } else {
             alert("You must select at least one character type!");
+            
             generatePassword();
             return;
         }
@@ -57,9 +57,15 @@ function getPassword (l, characters) {
         pwd += characters.charAt(Math.floor(Math.random() * characters.length));
     }
     return pwd;
-}
+};
 
-// console.log(password(8,upperChar));
+function myFunction() {
+    var copyText = document.getElementById("outputPwd");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert("Copied the password: " + copyText.value);
+}
 
 // Other Notes
 // Bonus: have copy to clipboard option

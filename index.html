@@ -18,18 +18,20 @@
             <div class="col-sm-8">
                 <h2 class="font-weight-bold">Generate a Password</h2>
                 <div class="form-group">
-                    <label for="password" class= "text-center">Your Secure Password</label>
-                        <textarea class="form-control rounded-0" id="outputPwd" rows="8"></textarea>
+                    <textarea class="form-control text-center" id="outputPwd" rows="6" placeholder="Your Secure Password"></textarea>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                    <button type="button" class="generate-pw text-center btn btn-primary">Generate Password</button>
+                        <button type="button" class="generate-pw text-center btn btn-primary">Generate Password</button>
                     </div>
                     <div class="col-sm-6">
-                    <button type="button" class="copy-password text-center btn btn-primary">Copy to Clipboard</button>   
+                        <button type="button" class="copy-pw text-center btn btn-primary" onclick = "myFunction()">Copy to Clipboard</button>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="script.js"></script> 
 </body>
 </html>
